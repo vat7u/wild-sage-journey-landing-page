@@ -1,0 +1,1743 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wild Sage Journey | Health &amp; Wellness Coaching — Rebuilding Self-Trust &amp; Radiance</title>
+  <meta name="description" content="Wild Sage Journey — Editorial health and wellness coaching for women navigating major life transitions, divorce, and the return to self-trust, sovereignty, and inner radiance.">
+
+  <!-- Google Fonts: Fraunces, Lora, Archivo -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,600;1,9..144,300;1,9..144,400;1,9..144,600&family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+
+  <style>
+    /* -------------------------------------------------------------
+       DESIGN SYSTEM & TOKENS (Olosirkon Inspired Adaptation)
+       ------------------------------------------------------------- */
+    :root {
+      --color-gold: #C8A24B;
+      --color-bone: #EFE8DC;
+      --color-bone-light: #F7F3EB;
+      --color-charcoal: #22201C;
+      --color-charcoal-deep: #181613;
+      --color-ochre: #B05A2E;
+      --color-acacia: #5C6B4A;
+      --color-acacia-dark: #455236;
+
+      --hairline-light: rgba(34, 32, 28, 0.15);
+      --hairline-dark: rgba(239, 232, 220, 0.22);
+      --hairline-gold: rgba(200, 162, 75, 0.5);
+
+      --font-display: 'Fraunces', Georgia, serif;
+      --font-body: 'Lora', Georgia, serif;
+      --font-kicker: 'Archivo', -apple-system, BlinkMacSystemFont, sans-serif;
+
+      --max-width: 1360px;
+    }
+
+    /* Selection */
+    ::selection {
+      background-color: var(--color-gold);
+      color: var(--color-charcoal);
+    }
+
+    /* Reset & Base */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+      background-color: var(--color-bone);
+      color: var(--color-charcoal);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    body {
+      font-family: var(--font-body);
+      font-size: 18.5px;
+      line-height: 1.75;
+      background-color: var(--color-bone);
+      color: var(--color-charcoal);
+      overflow-x: hidden;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button {
+      font-family: inherit;
+      cursor: pointer;
+      border: none;
+      background: none;
+    }
+
+    /* Kicker & Typography Utilities */
+    .kicker {
+      font-family: var(--font-kicker);
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      display: inline-block;
+    }
+
+    .kicker-gold {
+      color: var(--color-gold);
+    }
+
+    .kicker-ochre {
+      color: var(--color-ochre);
+    }
+
+    .kicker-bone {
+      color: var(--color-bone);
+    }
+
+    .kicker-acacia {
+      color: var(--color-acacia);
+    }
+
+    .kicker-charcoal {
+      color: var(--color-charcoal);
+      opacity: 0.75;
+    }
+
+    .serif-display {
+      font-family: var(--font-display);
+      font-weight: 300;
+      letter-spacing: -0.015em;
+    }
+
+    .gold-italic {
+      color: var(--color-gold);
+      font-style: italic;
+      font-weight: 300;
+    }
+
+    .ochre-accent {
+      color: var(--color-ochre);
+    }
+
+    .acacia-italic {
+      color: var(--color-acacia);
+      font-style: italic;
+      font-family: var(--font-display);
+    }
+
+    .rule-gold {
+      width: 32px;
+      height: 1px;
+      background-color: var(--color-gold);
+      display: block;
+      margin: 1.25rem 0;
+    }
+
+    .hairline-divider {
+      width: 100%;
+      height: 1px;
+      background-color: var(--hairline-light);
+      margin: 0;
+      border: none;
+    }
+
+    .hairline-divider-dark {
+      width: 100%;
+      height: 1px;
+      background-color: var(--hairline-dark);
+      margin: 0;
+      border: none;
+    }
+
+    /* Container & 12-Column Editorial Grid */
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding-left: clamp(1.5rem, 4vw, 4rem);
+      padding-right: clamp(1.5rem, 4vw, 4rem);
+    }
+
+    .editorial-grid {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      column-gap: 2rem;
+      row-gap: 2.5rem;
+    }
+
+    /* Section vertical rhythm */
+    .section-spacing {
+      padding-top: clamp(4.5rem, 8vw, 9rem);
+      padding-bottom: clamp(4.5rem, 8vw, 9rem);
+    }
+
+    /* Strictly flat styling: no rounded corners, no box shadows */
+    .flat-card {
+      border-radius: 0 !important;
+      box-shadow: none !important;
+    }
+
+    /* -------------------------------------------------------------
+       NAVIGATION
+       ------------------------------------------------------------- */
+    .nav-header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 100;
+      padding: 1.5rem 0;
+      transition: background-color 0.4s ease, border-color 0.4s ease, padding 0.3s ease;
+      border-bottom: 1px solid rgba(239, 232, 220, 0.12);
+    }
+
+    .nav-header.scrolled {
+      background-color: rgba(34, 32, 28, 0.96);
+      backdrop-filter: blur(8px);
+      padding: 1rem 0;
+      border-bottom: 1px solid rgba(200, 162, 75, 0.25);
+    }
+
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .nav-brand {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .nav-brand-title {
+      font-family: var(--font-display);
+      font-size: 1.35rem;
+      font-weight: 400;
+      letter-spacing: 0.05em;
+      color: var(--color-bone);
+      text-transform: uppercase;
+    }
+
+    .nav-brand-sub {
+      font-family: var(--font-kicker);
+      font-size: 9px;
+      letter-spacing: 0.24em;
+      color: var(--color-gold);
+      text-transform: uppercase;
+      margin-top: 2px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2.5rem;
+      align-items: center;
+      list-style: none;
+    }
+
+    .nav-link {
+      font-family: var(--font-kicker);
+      font-size: 10.5px;
+      font-weight: 500;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--color-bone);
+      opacity: 0.85;
+      position: relative;
+      padding-bottom: 4px;
+      transition: opacity 0.25s ease, color 0.25s ease;
+    }
+
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0%;
+      height: 1px;
+      background-color: var(--color-gold);
+      transition: width 0.25s ease;
+    }
+
+    .nav-link:hover {
+      opacity: 1;
+      color: var(--color-gold);
+    }
+
+    .nav-link:hover::after {
+      width: 100%;
+    }
+
+    .nav-cta-btn {
+      font-family: var(--font-kicker);
+      font-size: 11px;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--color-bone);
+      background-color: transparent;
+      border: 1px solid var(--color-gold);
+      padding: 0.65rem 1.4rem;
+      transition: all 0.3s ease;
+    }
+
+    .nav-cta-btn:hover {
+      background-color: var(--color-gold);
+      color: var(--color-charcoal);
+    }
+
+    /* Mobile Menu Toggle */
+    .mobile-menu-toggle {
+      display: none;
+      flex-direction: column;
+      gap: 6px;
+      padding: 4px;
+    }
+
+    .mobile-menu-toggle span {
+      width: 24px;
+      height: 1px;
+      background-color: var(--color-bone);
+      transition: 0.3s;
+    }
+
+    /* -------------------------------------------------------------
+       HERO SECTION (#hero)
+       ------------------------------------------------------------- */
+    #hero {
+      position: relative;
+      height: 100vh;
+      min-height: 720px;
+      background-color: var(--color-charcoal);
+      color: var(--color-bone);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding-top: 120px;
+      padding-bottom: clamp(3rem, 6vw, 5rem);
+      overflow: hidden;
+    }
+
+    .hero-bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 38%;
+      z-index: 1;
+      transform: scale(1.02);
+      transition: transform 1.2s ease-out;
+    }
+
+    .hero-scrim {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(115deg, rgba(34, 32, 28, 0.88) 0%, rgba(34, 32, 28, 0.52) 48%, rgba(34, 32, 28, 0.28) 100%);
+      z-index: 2;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 3;
+      max-width: 980px;
+    }
+
+    .hero-kicker-stack {
+      margin-bottom: 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .hero-kicker-line {
+      width: 28px;
+      height: 1px;
+      background-color: var(--color-gold);
+      display: inline-block;
+    }
+
+    .hero-title {
+      font-size: clamp(2.8rem, 6.5vw, 6.5rem);
+      line-height: 1.06;
+      font-weight: 300;
+      letter-spacing: -0.02em;
+      margin-bottom: 1.8rem;
+    }
+
+    .hero-subheadline {
+      font-size: 1.15rem;
+      font-family: var(--font-body);
+      font-weight: 400;
+      line-height: 1.7;
+      color: var(--color-bone);
+      opacity: 0.92;
+      max-width: 680px;
+      margin-bottom: 2.5rem;
+    }
+
+    .hero-actions {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .btn-gold-primary {
+      font-family: var(--font-kicker);
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.24em;
+      text-transform: uppercase;
+      background-color: var(--color-gold);
+      color: var(--color-charcoal);
+      padding: 1.1rem 2.2rem;
+      border: 1px solid var(--color-gold);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.8rem;
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      position: relative;
+    }
+
+    .btn-gold-primary:hover {
+      background-color: transparent;
+      color: var(--color-bone);
+    }
+
+    .hero-link-secondary {
+      font-family: var(--font-kicker);
+      font-size: 11px;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--color-bone);
+      border-bottom: 1px solid var(--color-gold);
+      padding-bottom: 4px;
+      transition: color 0.25s, border-color 0.25s;
+    }
+
+    .hero-link-secondary:hover {
+      color: var(--color-gold);
+    }
+
+    .hero-scroll-cue {
+      position: absolute;
+      bottom: 2rem;
+      right: clamp(1.5rem, 4vw, 4rem);
+      z-index: 3;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-family: var(--font-kicker);
+      font-size: 10px;
+      letter-spacing: 0.25em;
+      color: var(--color-bone);
+      opacity: 0.7;
+      text-transform: uppercase;
+    }
+
+    .hero-scroll-cue span.line {
+      width: 40px;
+      height: 1px;
+      background-color: var(--color-gold);
+      display: inline-block;
+    }
+
+    /* -------------------------------------------------------------
+       SECTION: HER STORY (#about)
+       ------------------------------------------------------------- */
+    #about {
+      background-color: var(--color-bone);
+      position: relative;
+    }
+
+    .story-left-col {
+      grid-column: 1 / span 3;
+    }
+
+    .story-body-col {
+      grid-column: 4 / span 6;
+      padding-right: 1.5rem;
+    }
+
+    .story-aside-col {
+      grid-column: 10 / span 3;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .dropcap {
+      float: left;
+      font-family: var(--font-display);
+      font-size: 5.2rem;
+      line-height: 0.82;
+      padding-top: 6px;
+      padding-right: 14px;
+      padding-bottom: 2px;
+      color: var(--color-ochre);
+      font-weight: 300;
+      font-style: italic;
+    }
+
+    .story-lead {
+      font-size: 1.35rem;
+      line-height: 1.65;
+      font-family: var(--font-display);
+      font-weight: 300;
+      color: var(--color-charcoal);
+      margin-bottom: 1.75rem;
+    }
+
+    .story-paragraph {
+      margin-bottom: 1.6rem;
+      color: rgba(34, 32, 28, 0.9);
+    }
+
+    .marginal-note {
+      border-left: 1px solid var(--color-acacia);
+      padding-left: 1.25rem;
+      font-size: 0.95rem;
+      line-height: 1.6;
+      color: var(--color-acacia-dark);
+      font-style: italic;
+      font-family: var(--font-display);
+      margin-top: 1.5rem;
+    }
+
+    .story-image-wrap {
+      margin-top: 2rem;
+      border: 1px solid var(--hairline-light);
+      padding: 8px;
+      background: var(--color-bone-light);
+    }
+
+    .story-image-wrap img {
+      width: 100%;
+      height: 380px;
+      object-fit: cover;
+    }
+
+    .story-image-caption {
+      font-family: var(--font-kicker);
+      font-size: 10px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--color-charcoal);
+      opacity: 0.65;
+      margin-top: 8px;
+    }
+
+    /* -------------------------------------------------------------
+       SECTION: APPROACH / THREE PILLARS (#approach)
+       ------------------------------------------------------------- */
+    #approach {
+      background-color: var(--color-bone-light);
+      border-top: 1px solid var(--hairline-light);
+      border-bottom: 1px solid var(--hairline-light);
+    }
+
+    .section-header-editorial {
+      margin-bottom: clamp(3rem, 5vw, 5rem);
+    }
+
+    .section-title {
+      font-size: clamp(2.4rem, 5vw, 4.2rem);
+      line-height: 1.12;
+      margin-top: 0.8rem;
+      color: var(--color-charcoal);
+    }
+
+    /* Pillar rows styled after season rows */
+    .pillar-row-item {
+      display: grid;
+      grid-template-columns: 2fr 3fr 5fr 2fr;
+      align-items: baseline;
+      padding: 2.5rem 0;
+      border-bottom: 1px solid var(--hairline-light);
+      transition: background-color 0.3s ease, padding 0.3s ease;
+    }
+
+    .pillar-row-item:first-of-type {
+      border-top: 1px solid var(--hairline-light);
+    }
+
+    .pillar-row-item:hover {
+      background-color: rgba(200, 162, 75, 0.04);
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+
+    .pillar-index {
+      font-family: var(--font-kicker);
+      font-size: 11px;
+      letter-spacing: 0.24em;
+      color: var(--color-ochre);
+      font-weight: 600;
+    }
+
+    .pillar-name {
+      font-family: var(--font-display);
+      font-size: 2.2rem;
+      font-weight: 300;
+      color: var(--color-charcoal);
+    }
+
+    .pillar-name em {
+      font-style: italic;
+      color: var(--color-acacia);
+    }
+
+    .pillar-desc {
+      font-size: 1.05rem;
+      line-height: 1.7;
+      color: rgba(34, 32, 28, 0.85);
+      padding-right: 2rem;
+    }
+
+    .pillar-focus {
+      font-family: var(--font-kicker);
+      font-size: 10px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--color-gold);
+      text-align: right;
+    }
+
+    /* -------------------------------------------------------------
+       SECTION: PULL-QUOTE PANEL
+       ------------------------------------------------------------- */
+    .pullquote-panel {
+      background-color: var(--color-charcoal);
+      color: var(--color-bone);
+      padding: clamp(5rem, 9vw, 9rem) 0;
+      position: relative;
+      border-top: 1px solid var(--hairline-gold);
+      border-bottom: 1px solid var(--hairline-gold);
+    }
+
+    .pullquote-text {
+      font-family: var(--font-display);
+      font-size: clamp(2rem, 4.5vw, 3.8rem);
+      line-height: 1.25;
+      font-weight: 300;
+      font-style: italic;
+      color: var(--color-bone);
+      text-align: center;
+      max-width: 1080px;
+      margin: 0 auto;
+    }
+
+    .pullquote-quote-mark {
+      font-family: var(--font-display);
+      color: var(--color-gold);
+      font-size: 1.3em;
+      vertical-align: -0.1em;
+      line-height: 0;
+      display: inline-block;
+      margin: 0 4px;
+    }
+
+    .pullquote-author {
+      text-align: center;
+      margin-top: 2.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 6px;
+    }
+
+    /* -------------------------------------------------------------
+       SECTION: WHO THIS IS FOR (#who-its-for)
+       ------------------------------------------------------------- */
+    #who-its-for {
+      background-color: var(--color-bone);
+    }
+
+    .who-label-col {
+      grid-column: 1 / span 4;
+    }
+
+    .who-content-col {
+      grid-column: 5 / span 8;
+    }
+
+    .pain-point-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 1.75rem;
+    }
+
+    .pain-point-item {
+      display: grid;
+      grid-template-columns: 36px 1fr;
+      align-items: baseline;
+      padding-bottom: 1.75rem;
+      border-bottom: 1px solid var(--hairline-light);
+    }
+
+    .pain-point-bullet {
+      font-family: var(--font-kicker);
+      font-size: 11px;
+      color: var(--color-gold);
+      font-weight: 700;
+      letter-spacing: 0.1em;
+    }
+
+    .pain-point-heading {
+      font-family: var(--font-display);
+      font-size: 1.4rem;
+      font-weight: 400;
+      color: var(--color-charcoal);
+      margin-bottom: 0.4rem;
+    }
+
+    .pain-point-detail {
+      font-size: 1.02rem;
+      line-height: 1.65;
+      color: rgba(34, 32, 28, 0.85);
+    }
+
+    /* Acacia tinted highlight box */
+    .acacia-callout-panel {
+      background-color: var(--color-acacia);
+      color: var(--color-bone);
+      padding: clamp(2.5rem, 5vw, 4rem);
+      margin-top: 3.5rem;
+    }
+
+    .acacia-callout-panel .serif-display {
+      font-size: 1.75rem;
+      line-height: 1.35;
+      margin-bottom: 1rem;
+      color: #FFFFFF;
+    }
+
+    .acacia-callout-panel p {
+      font-size: 1.05rem;
+      color: rgba(239, 232, 220, 0.95);
+      line-height: 1.7;
+    }
+
+    /* -------------------------------------------------------------
+       SECTION: OFFER / PROGRAM (#offer)
+       ------------------------------------------------------------- */
+    #offer {
+      background-color: var(--color-bone-light);
+      border-top: 1px solid var(--hairline-light);
+    }
+
+    .suite-card {
+      background-color: var(--color-bone);
+      border: 1px solid var(--hairline-light);
+      padding: clamp(2.5rem, 5vw, 4.5rem);
+      position: relative;
+    }
+
+    .suite-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background: linear-gradient(90deg, var(--color-gold), transparent);
+    }
+
+    .suite-header-grid {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      align-items: baseline;
+      gap: 2rem;
+      margin-bottom: 2rem;
+      border-bottom: 1px solid var(--hairline-light);
+      padding-bottom: 1.5rem;
+    }
+
+    .suite-title {
+      font-family: var(--font-display);
+      font-size: clamp(2rem, 3.8vw, 3.2rem);
+      font-weight: 300;
+      line-height: 1.15;
+      color: var(--color-charcoal);
+    }
+
+    .suite-specs {
+      font-family: var(--font-kicker);
+      font-size: 11px;
+      letter-spacing: 0.22em;
+      color: var(--color-ochre);
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+
+    .suite-features-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2.5rem;
+      margin: 3rem 0;
+    }
+
+    .suite-feature-block {
+      border-left: 1px solid var(--color-gold);
+      padding-left: 1.25rem;
+    }
+
+    .suite-feature-num {
+      font-family: var(--font-kicker);
+      font-size: 10px;
+      letter-spacing: 0.2em;
+      color: var(--color-gold);
+      margin-bottom: 0.4rem;
+    }
+
+    .suite-feature-title {
+      font-family: var(--font-display);
+      font-size: 1.25rem;
+      font-weight: 400;
+      color: var(--color-charcoal);
+      margin-bottom: 0.6rem;
+    }
+
+    .suite-feature-body {
+      font-size: 0.98rem;
+      line-height: 1.65;
+      color: rgba(34, 32, 28, 0.85);
+    }
+
+    .suite-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-top: 1px solid var(--hairline-light);
+      padding-top: 2rem;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+    }
+
+    .suite-cta-link {
+      font-family: var(--font-kicker);
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.24em;
+      text-transform: uppercase;
+      color: var(--color-charcoal);
+      border-bottom: 2px solid var(--color-gold);
+      padding-bottom: 6px;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: all 0.25s ease;
+    }
+
+    .suite-cta-link:hover {
+      color: var(--color-ochre);
+      border-bottom-color: var(--color-ochre);
+      padding-left: 4px;
+    }
+
+    /* -------------------------------------------------------------
+       SECTION: TESTIMONIALS (#testimonials)
+       ------------------------------------------------------------- */
+    #testimonials {
+      background-color: var(--color-bone);
+    }
+
+    .testimonial-cards-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+      margin-top: 3.5rem;
+    }
+
+    .testimonial-card {
+      border: 1px solid var(--hairline-light);
+      background-color: var(--color-bone-light);
+      padding: 2.5rem 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+      transition: transform 0.3s ease, border-color 0.3s ease;
+    }
+
+    .testimonial-card:hover {
+      border-color: var(--color-gold);
+    }
+
+    .testimonial-quote {
+      font-size: 1.05rem;
+      line-height: 1.7;
+      color: rgba(34, 32, 28, 0.9);
+      font-style: italic;
+      margin-bottom: 2rem;
+      position: relative;
+    }
+
+    .testimonial-quote::before {
+      content: '“';
+      font-family: var(--font-display);
+      font-size: 3rem;
+      line-height: 0;
+      color: var(--color-gold);
+      position: absolute;
+      top: -10px;
+      left: -8px;
+      opacity: 0.35;
+    }
+
+    .testimonial-meta {
+      border-top: 1px solid var(--hairline-light);
+      padding-top: 1rem;
+    }
+
+    .testimonial-name {
+      font-family: var(--font-display);
+      font-size: 1.15rem;
+      font-weight: 400;
+      color: var(--color-charcoal);
+    }
+
+    .testimonial-context {
+      font-family: var(--font-kicker);
+      font-size: 9.5px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--color-ochre);
+      margin-top: 3px;
+    }
+
+    /* -------------------------------------------------------------
+       SECTION: FOOTER (#footer)
+       ------------------------------------------------------------- */
+    #footer {
+      background-color: var(--color-charcoal);
+      color: var(--color-bone);
+      padding-top: clamp(4.5rem, 8vw, 7rem);
+      padding-bottom: 3.5rem;
+      border-top: 1px solid var(--hairline-gold);
+    }
+
+    .footer-hero-line {
+      font-family: var(--font-display);
+      font-size: clamp(2.2rem, 5vw, 4.2rem);
+      font-weight: 300;
+      line-height: 1.15;
+      color: var(--color-bone);
+      margin-bottom: 3.5rem;
+      max-width: 900px;
+    }
+
+    .footer-columns-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 3rem;
+      padding-bottom: 4rem;
+      border-bottom: 1px solid var(--hairline-dark);
+      margin-bottom: 2.5rem;
+    }
+
+    .footer-col-title {
+      font-family: var(--font-kicker);
+      font-size: 11px;
+      letter-spacing: 0.24em;
+      color: var(--color-gold);
+      text-transform: uppercase;
+      margin-bottom: 1.4rem;
+    }
+
+    .footer-col-text {
+      font-size: 0.95rem;
+      line-height: 1.7;
+      color: rgba(239, 232, 220, 0.75);
+    }
+
+    .footer-links-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.8rem;
+    }
+
+    .footer-link-item a {
+      font-family: var(--font-kicker);
+      font-size: 10.5px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: rgba(239, 232, 220, 0.85);
+      transition: color 0.25s ease;
+    }
+
+    .footer-link-item a:hover {
+      color: var(--color-gold);
+    }
+
+    .footer-bottom-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-family: var(--font-kicker);
+      font-size: 10px;
+      letter-spacing: 0.2em;
+      color: rgba(239, 232, 220, 0.5);
+      text-transform: uppercase;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    /* -------------------------------------------------------------
+       BOOKING MODAL / DIALOG
+       ------------------------------------------------------------- */
+    .modal-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(24, 22, 19, 0.85);
+      backdrop-filter: blur(6px);
+      z-index: 1000;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 1.5rem;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .modal-overlay.active {
+      display: flex;
+      opacity: 1;
+    }
+
+    .modal-card {
+      background-color: var(--color-bone);
+      border: 1px solid var(--color-gold);
+      max-width: 640px;
+      width: 100%;
+      padding: clamp(2rem, 4vw, 3.5rem);
+      position: relative;
+      max-height: 90vh;
+      overflow-y: auto;
+    }
+
+    .modal-close-btn {
+      position: absolute;
+      top: 1.5rem;
+      right: 1.5rem;
+      font-family: var(--font-kicker);
+      font-size: 14px;
+      color: var(--color-charcoal);
+      opacity: 0.7;
+      transition: opacity 0.2s;
+    }
+
+    .modal-close-btn:hover {
+      opacity: 1;
+      color: var(--color-ochre);
+    }
+
+    .form-group {
+      margin-bottom: 1.5rem;
+    }
+
+    .form-label {
+      display: block;
+      font-family: var(--font-kicker);
+      font-size: 10.5px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--color-charcoal);
+      margin-bottom: 0.5rem;
+    }
+
+    .form-input, .form-textarea {
+      width: 100%;
+      background-color: var(--color-bone-light);
+      border: 1px solid var(--hairline-light);
+      padding: 0.85rem 1rem;
+      font-family: var(--font-body);
+      font-size: 1rem;
+      color: var(--color-charcoal);
+      border-radius: 0;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+
+    .form-input:focus, .form-textarea:focus {
+      border-color: var(--color-gold);
+    }
+
+    /* -------------------------------------------------------------
+       RESPONSIVE BREAKPOINTS
+       ------------------------------------------------------------- */
+    @media (max-width: 1024px) {
+      .editorial-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 2.5rem;
+      }
+
+      .story-left-col, .story-body-col, .story-aside-col,
+      .who-label-col, .who-content-col {
+        grid-column: auto;
+      }
+
+      .pillar-row-item {
+        grid-template-columns: 1fr;
+        gap: 0.8rem;
+      }
+
+      .pillar-focus {
+        text-align: left;
+      }
+
+      .suite-features-grid {
+        grid-template-columns: 1fr;
+        gap: 1.8rem;
+      }
+
+      .testimonial-cards-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-columns-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .nav-links, .nav-cta-btn {
+        display: none;
+      }
+
+      .mobile-menu-toggle {
+        display: flex;
+      }
+
+      .nav-links.mobile-open {
+        display: flex;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: var(--color-charcoal);
+        flex-direction: column;
+        padding: 2rem;
+        gap: 1.5rem;
+        border-bottom: 1px solid var(--color-gold);
+      }
+
+      .hero-title {
+        font-size: 2.75rem;
+      }
+
+      .footer-columns-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- =============================================================
+       HEADER & NAVIGATION
+       ============================================================= -->
+  <header class="nav-header" id="main-nav-header">
+    <div class="container nav-inner">
+      <a href="#hero" class="nav-brand" aria-label="Wild Sage Journey Homepage">
+        <span class="nav-brand-title">Wild Sage Journey</span>
+        <span class="nav-brand-sub">Health &amp; Wellness Coaching &bull; Beth Eberle</span>
+      </a>
+
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links" id="nav-links-menu">
+          <li><a href="#about" class="nav-link">Her Story</a></li>
+          <li><a href="#approach" class="nav-link">The Approach</a></li>
+          <li><a href="#who-its-for" class="nav-link">Who It's For</a></li>
+          <li><a href="#offer" class="nav-link">1:1 Program</a></li>
+          <li><a href="#testimonials" class="nav-link">Reflections</a></li>
+        </ul>
+      </nav>
+
+      <button class="nav-cta-btn" id="nav-book-btn" onclick="openBookingModal()">Book Call</button>
+
+      <button class="mobile-menu-toggle" id="mobile-toggle" aria-label="Toggle navigation menu" onclick="toggleMobileNav()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- =============================================================
+         SECTION: HERO (#hero)
+         ============================================================= -->
+    <section id="hero" data-testid="hero-section" aria-label="Welcome">
+      <img class="hero-bg" src="assets/hero.jpg" alt="Woman watching sunset over the ocean horizon at golden hour" />
+      <div class="hero-scrim"></div>
+
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-kicker-stack">
+            <span class="kicker kicker-gold">Wild Sage Journey</span>
+            <span class="hero-kicker-line"></span>
+            <span class="kicker kicker-bone" style="opacity:0.75;">Sovereignty &amp; Renewal</span>
+          </div>
+
+          <h1 class="serif-display hero-title" data-testid="hero-headline">
+            Reclaiming self-trust so you can <span class="gold-italic">glow again with quiet certainty</span>.
+          </h1>
+
+          <div class="rule-gold"></div>
+
+          <p class="hero-subheadline">
+            For women navigating painful life transitions, the aftermath of divorce, and the quiet, courageous return to their own inherent light and self-worth.
+          </p>
+
+          <div class="hero-actions">
+            <button class="btn-gold-primary" id="hero-cta" data-testid="hero-cta-button" onclick="openBookingModal()">
+              Book a Free Discovery Call
+              <span style="font-size: 14px;">&rarr;</span>
+            </button>
+            <a href="#about" class="hero-link-secondary">Read Her Journey &darr;</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-scroll-cue">
+        <span class="line"></span>
+        <span>Scroll to Explore</span>
+      </div>
+    </section>
+
+    <!-- =============================================================
+         SECTION: HER STORY (#about)
+         ============================================================= -->
+    <section id="about" class="section-spacing" data-testid="story-section" aria-label="About Beth Eberle">
+      <div class="container">
+        <div class="editorial-grid">
+          
+          <!-- Column 1: Kicker & Section Header -->
+          <div class="story-left-col">
+            <span class="kicker kicker-ochre">01 / The Origin</span>
+            <h2 class="serif-display" style="font-size: 2.2rem; margin-top: 0.8rem; line-height: 1.2;">
+              From Dimmed to <span class="gold-italic">Whole</span>.
+            </h2>
+            <div class="rule-gold"></div>
+            <p class="kicker kicker-charcoal" style="margin-top: 1rem;">
+              Beth Eberle, B.S., CHWC<br>
+              Founder, Wild Sage Journey
+            </p>
+
+            <div class="story-image-wrap" style="margin-top: 2.5rem;">
+              <img src="assets/about.jpg" alt="Beth Eberle in peaceful natural light" />
+              <div class="story-image-caption">Beth Eberle — In Practice &amp; Presence</div>
+            </div>
+          </div>
+
+          <!-- Column 2: Editorial Essay -->
+          <div class="story-body-col">
+            <p class="story-lead">
+              There is a particular kind of silence that follows the unraveling of a life you thought was permanent.
+            </p>
+
+            <p class="story-paragraph">
+              <span class="dropcap">W</span>hen my marriage ended, it wasn't simply the dissolution of a partnership—it was the quiet realization that somewhere along the road, I had traded away my own intuition. I had allowed myself to feel diminished, muted, and defined by stories about who I was supposed to be. For years, I existed in surviving mode, doing what was expected while my internal spark grew faint.
+            </p>
+
+            <p class="story-paragraph">
+              Healing did not arrive in an instant breakthrough. It arrived through the patient, somatic reclamation of my daily life: nourishing food, mindful movement, nervous-system restoration, and confronting the beliefs that kept me small. I made the conscious choice to resign from my retail management career and return to university to earn a degree in Alternative Medicine.
+            </p>
+
+            <p class="story-paragraph">
+              Following my formal degree, I spent five rigorous months immersing myself in traditional and somatic wellness disciplines across the Netherlands, Morocco, and Argentina. That journey solidified what I believe today: true wellness is not about fixing broken pieces—it is about relighting the inner flame that circumstance tried to extinguish.
+            </p>
+
+            <p class="story-paragraph" style="font-weight: 500; color: var(--color-charcoal);">
+              Through Wild Sage Journey, I do not hand you a generic formula. I walk beside you as an anchor while you remember how to trust yourself again.
+            </p>
+          </div>
+
+          <!-- Column 3: Marginal Note & Experience Callout -->
+          <div class="story-aside-col">
+            <div>
+              <span class="kicker kicker-acacia">Field Notes</span>
+              <div class="marginal-note">
+                “Transformation is not academic. It is an embodied shift that happens when a woman stops asking for permission to occupy her full radiance.”
+              </div>
+            </div>
+
+            <div class="story-image-wrap">
+              <img src="assets/journey.jpg" alt="Moroccan and Mediterranean wellness retreat scenery" />
+              <div class="story-image-caption">Immersive Studies: Morocco &amp; South America</div>
+            </div>
+
+            <div style="border-top: 1px solid var(--hairline-light); padding-top: 1.25rem; margin-top: 1.5rem;">
+              <span class="kicker kicker-gold">Certifications</span>
+              <p style="font-size: 0.92rem; line-height: 1.6; margin-top: 0.5rem; color: rgba(34,32,28,0.85);">
+                &bull; B.S. Alternative Medicine<br>
+                &bull; Certified Health &amp; Wellness Coach (CHWC)<br>
+                &bull; 500+ Hours Integrative Somatic Training
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =============================================================
+         SECTION: APPROACH / THREE PILLARS (#approach)
+         ============================================================= -->
+    <section id="approach" class="section-spacing" data-testid="approach-section" aria-label="Our Approach">
+      <div class="container">
+        
+        <div class="section-header-editorial">
+          <span class="kicker kicker-gold">02 / The Philosophy</span>
+          <h2 class="serif-display section-title">
+            The Three Pillars of <span class="gold-italic">Sovereignty</span>
+          </h2>
+          <p style="max-width: 680px; margin-top: 1rem; color: rgba(34,32,28,0.8);">
+            A methodical, holistic framework designed to gently transition you from emotional exhaustion back into vitality, intuition, and aligned purpose.
+          </p>
+        </div>
+
+        <!-- Pillar Rows (Season Rows style) -->
+        <div class="pillars-list">
+          
+          <!-- Pillar 1 -->
+          <div class="pillar-row-item" data-testid="pillar-mind">
+            <span class="pillar-index">PILLAR 01</span>
+            <h3 class="pillar-name">The <em>Mind</em></h3>
+            <p class="pillar-desc">
+              Untangling internal narratives of unworthiness. Re-establishing conscious boundaries, dismantling people-pleasing reflex, and rebuilding foundational trust in your decision-making faculty.
+            </p>
+            <span class="pillar-focus">Cognitive &amp; Belief Alchemy</span>
+          </div>
+
+          <!-- Pillar 2 -->
+          <div class="pillar-row-item" data-testid="pillar-body">
+            <span class="pillar-index">PILLAR 02</span>
+            <h3 class="pillar-name">The <em>Body</em></h3>
+            <p class="pillar-desc">
+              Somatic nervous system regulation, hormonal support through restorative nutrition, regenerative sleep rituals, and release of stored somatic trauma from prolonged transition stress.
+            </p>
+            <span class="pillar-focus">Somatic &amp; Nervous Vitality</span>
+          </div>
+
+          <!-- Pillar 3 -->
+          <div class="pillar-row-item" data-testid="pillar-spirit">
+            <span class="pillar-index">PILLAR 03</span>
+            <h3 class="pillar-name">The <em>Spirit</em></h3>
+            <p class="pillar-desc">
+              Relighting the dormant creative spark. Cultivating pleasure, quiet reverence, emotional sovereignty, and stepping into the expansive second act of your life with unshakeable dignity.
+            </p>
+            <span class="pillar-focus">Radiance &amp; Life Purpose</span>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =============================================================
+         SECTION: PULL-QUOTE PANEL (Charcoal Full-Width Band)
+         ============================================================= -->
+    <section class="pullquote-panel" aria-label="Statement of Philosophy">
+      <div class="container">
+        <blockquote class="pullquote-text">
+          <span class="pullquote-quote-mark">&ldquo;</span>We do not fix what was never broken. We simply clear away everything that dimmed your light, until you recognize your own sovereign truth once more.<span class="pullquote-quote-mark">&rdquo;</span>
+        </blockquote>
+        <div class="pullquote-author">
+          <span class="kicker kicker-gold">Wild Sage Journey</span>
+          <span class="kicker kicker-bone" style="opacity: 0.65; font-size: 9.5px;">Beth Eberle &bull; Somatic Coaching Philosophy</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- =============================================================
+         SECTION: WHO THIS IS FOR (#who-its-for)
+         ============================================================= -->
+    <section id="who-its-for" class="section-spacing" data-testid="who-section" aria-label="Who This Is For">
+      <div class="container">
+        <div class="editorial-grid">
+          
+          <div class="who-label-col">
+            <span class="kicker kicker-ochre">03 / Resonance</span>
+            <h2 class="serif-display" style="font-size: clamp(2.2rem, 4vw, 3.4rem); line-height: 1.15; margin-top: 0.8rem;">
+              Is this space <span class="gold-italic">calling you</span>?
+            </h2>
+            <div class="rule-gold"></div>
+            <p style="font-size: 1rem; color: rgba(34,32,28,0.8); line-height: 1.7; margin-top: 1rem;">
+              This work is crafted intentionally for women standing at the crossroads of their lives, ready to shed outdated identities and step into self-trust.
+            </p>
+          </div>
+
+          <div class="who-content-col">
+            <ul class="pain-point-list">
+              
+              <li class="pain-point-item">
+                <span class="pain-point-bullet">01</span>
+                <div>
+                  <h3 class="pain-point-heading">Navigating Post-Divorce &amp; Relationship Loss</h3>
+                  <p class="pain-point-detail">
+                    You have walked away from a marriage or partnership, but find yourself constantly questioning your instincts, wondering how you lost yourself in the process.
+                  </p>
+                </div>
+              </li>
+
+              <li class="pain-point-item">
+                <span class="pain-point-bullet">02</span>
+                <div>
+                  <h3 class="pain-point-heading">Feeling Dimmed by Other People's Opinions</h3>
+                  <p class="pain-point-detail">
+                    You have spent years absorbing expectations and labels from family, partners, or corporate cultures—and you are exhausted from carrying someone else's definition of your value.
+                  </p>
+                </div>
+              </li>
+
+              <li class="pain-point-item">
+                <span class="pain-point-bullet">03</span>
+                <div>
+                  <h3 class="pain-point-heading">Disconnection from Your Physical &amp; Intuitive Body</h3>
+                  <p class="pain-point-detail">
+                    You feel chronic fatigue, shallow breathing, and emotional numbness, craving a grounded, science-backed approach to feel vital, energetic, and present in your skin.
+                  </p>
+                </div>
+              </li>
+
+              <li class="pain-point-item">
+                <span class="pain-point-bullet">04</span>
+                <div>
+                  <h3 class="pain-point-heading">A Deep Readiness to "Glow Again"</h3>
+                  <p class="pain-point-detail">
+                    You aren't looking for quick-fix mantras. You want deep, patient, sustainable inner transformation with bespoke guidance and accountability.
+                  </p>
+                </div>
+              </li>
+
+            </ul>
+
+            <div class="acacia-callout-panel">
+              <span class="kicker" style="color: var(--color-gold); margin-bottom: 0.5rem;">The Core Shift</span>
+              <h4 class="serif-display">From Survival Mode to Sovereign Radiance</h4>
+              <p>
+                You don't need another generic diet, aggressive self-help plan, or toxic positivity. You need a dedicated sanctuary to remember who you are when nobody is telling you who to be.
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =============================================================
+         SECTION: OFFER / PROGRAM (#offer)
+         ============================================================= -->
+    <section id="offer" class="section-spacing" data-testid="offer-section" aria-label="1:1 Coaching Program">
+      <div class="container">
+        
+        <div class="suite-card">
+          
+          <div class="suite-header-grid">
+            <div>
+              <span class="kicker kicker-ochre">04 / The Immersion</span>
+              <h2 class="suite-title">
+                The 12-Week 1:1 Coaching Program
+              </h2>
+            </div>
+            <div class="suite-specs">
+              Bespoke Mentorship &bull; Limited to 6 Women per Cohort
+            </div>
+          </div>
+
+          <p style="font-size: 1.15rem; line-height: 1.75; color: rgba(34,32,28,0.9); max-width: 820px;">
+            A deeply personalized, three-month sacred journey designed to stabilize your nervous system, dismantle outdated conditioning, and rebuild your life upon unshakeable self-worth.
+          </p>
+
+          <div class="suite-features-grid">
+            
+            <div class="suite-feature-block">
+              <span class="suite-feature-num">PHASE I &bull; WEEKS 1–4</span>
+              <h3 class="suite-feature-title">Grounding &amp; Somatic Safety</h3>
+              <p class="suite-feature-body">
+                Regulating the nervous system after acute transition shock. Baseline wellness assessment, nourishing nutrition protocols, and establishing morning and evening grounding rituals.
+              </p>
+            </div>
+
+            <div class="suite-feature-block">
+              <span class="suite-feature-num">PHASE II &bull; WEEKS 5–8</span>
+              <h3 class="suite-feature-title">Intuition &amp; Boundary Alchemy</h3>
+              <p class="suite-feature-body">
+                Auditing energy leaks and codependent reflexes. Cultivating sovereign boundaries without guilt and reconnecting to gut intuition in everyday decision-making.
+              </p>
+            </div>
+
+            <div class="suite-feature-block">
+              <span class="suite-feature-num">PHASE III &bull; WEEKS 9–12</span>
+              <h3 class="suite-feature-title">Radiance &amp; Sovereign Vision</h3>
+              <p class="suite-feature-body">
+                Stepping into your embodied glow. Crafting your life vision, reigniting creative desire, and anchoring sustainable self-trust rituals that endure for life.
+              </p>
+            </div>
+
+          </div>
+
+          <div class="suite-footer">
+            <div>
+              <span class="kicker kicker-charcoal" style="font-size: 10px;">Includes: Bi-weekly 75-min deep dives &bull; Private audio messaging support &bull; Personalized wellness guides</span>
+            </div>
+            <a href="javascript:void(0)" class="suite-cta-link" id="offer-cta" data-testid="offer-cta-link" onclick="openBookingModal()">
+              Begin the Journey &rarr;
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =============================================================
+         SECTION: TESTIMONIALS (#testimonials)
+         ============================================================= -->
+    <section id="testimonials" class="section-spacing" data-testid="testimonials-section" aria-label="Client Reflections">
+      <div class="container">
+        
+        <div class="section-header-editorial">
+          <span class="kicker kicker-gold">05 / Words of Transformation</span>
+          <h2 class="serif-display section-title">
+            Client <span class="gold-italic">Reflections</span>
+          </h2>
+          <p style="max-width: 600px; margin-top: 0.8rem; color: rgba(34,32,28,0.8);">
+            Real accounts of women who stepped through the threshold of grief into renewed self-possession and joy.
+          </p>
+        </div>
+
+        <div class="testimonial-cards-grid">
+          
+          <div class="testimonial-card" data-testid="testimonial-card-1">
+            <p class="testimonial-quote">
+              “Working with Beth through Wild Sage Journey after my divorce was the first time I felt truly seen without judgment. She didn't try to rush my grief; she gave me practical tools to regulate my body and quiet the constant self-doubt. Today, I look in the mirror and genuinely like the woman looking back.”
+            </p>
+            <div class="testimonial-meta">
+              <div class="testimonial-name">Elena R.</div>
+              <div class="testimonial-context">Architect &bull; 12-Week Immersion Graduate</div>
+            </div>
+          </div>
+
+          <div class="testimonial-card" data-testid="testimonial-card-2">
+            <p class="testimonial-quote">
+              “I had lost all faith in my judgment after a decade of feeling diminished. Beth’s blend of alternative medicine principles and compassionate coaching was unlike anything I had tried. My anxiety has subsided, and I feel a quiet strength I didn't know I possessed.”
+            </p>
+            <div class="testimonial-meta">
+              <div class="testimonial-name">Claire M.</div>
+              <div class="testimonial-context">Creative Director &bull; Post-Transition Coaching</div>
+            </div>
+          </div>
+
+          <div class="testimonial-card" data-testid="testimonial-card-3">
+            <p class="testimonial-quote">
+              “The 'glow' isn't a marketing phrase—it's real. My friends kept asking what skincare I changed, but it was internal. Beth helped me stop living for others and start honoring my own energy. She is a gifted, steady guide.”
+            </p>
+            <div class="testimonial-meta">
+              <div class="testimonial-name">Sarah D.</div>
+              <div class="testimonial-context">Educator &bull; 1:1 Client</div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =============================================================
+         SECTION: FOOTER (#footer)
+         ============================================================= -->
+    <footer id="footer" data-testid="footer-section" aria-label="Footer">
+      <div class="container">
+        
+        <div>
+          <span class="kicker kicker-gold" style="margin-bottom: 1rem;">The First Step</span>
+          <h2 class="footer-hero-line">
+            Your spark was never gone.<br>
+            It was only waiting for you to <span class="gold-italic">return</span>.
+          </h2>
+          <button class="btn-gold-primary" id="footer-cta" data-testid="footer-cta-button" onclick="openBookingModal()" style="margin-bottom: 4rem;">
+            Schedule Your Free Discovery Call &rarr;
+          </button>
+        </div>
+
+        <div class="footer-columns-grid">
+          
+          <div>
+            <div class="footer-col-title">Wild Sage Journey</div>
+            <p class="footer-col-text">
+              Health, Wellness &amp; Somatic Mentorship guided by Beth Eberle, B.S., CHWC. Certified alternative medicine, holistic nutrition, and emotional renewal for sovereign women.
+            </p>
+            <div class="rule-gold"></div>
+            <p class="footer-col-text" style="font-size: 0.85rem;">
+              Based in Boulder, CO &bull; Working with clients globally via private virtual sanctuary.
+            </p>
+          </div>
+
+          <div>
+            <div class="footer-col-title">Navigation</div>
+            <ul class="footer-links-list">
+              <li class="footer-link-item"><a href="#about">Her Story</a></li>
+              <li class="footer-link-item"><a href="#approach">The Philosophy</a></li>
+              <li class="footer-link-item"><a href="#who-its-for">Who It's For</a></li>
+              <li class="footer-link-item"><a href="#offer">12-Week Immersion</a></li>
+              <li class="footer-link-item"><a href="#testimonials">Client Notes</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <div class="footer-col-title">Connect</div>
+            <ul class="footer-links-list">
+              <li class="footer-link-item"><a href="mailto:beth@wildsagejourney.com">beth@wildsagejourney.com</a></li>
+              <li class="footer-link-item"><a href="https://instagram.com" target="_blank" rel="noopener">Instagram / @wildsagejourney</a></li>
+              <li class="footer-link-item"><a href="https://substack.com" target="_blank" rel="noopener">Essays on Substack</a></li>
+              <li class="footer-link-item"><a href="https://pinterest.com" target="_blank" rel="noopener">Visual Journal</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <div class="footer-col-title">Sanctuary Hours</div>
+            <p class="footer-col-text">
+              Monday &ndash; Thursday<br>
+              9:00 AM &ndash; 4:00 PM MT<br><br>
+              Discovery calls scheduled Tuesday &amp; Thursday afternoons.
+            </p>
+          </div>
+
+        </div>
+
+        <div class="footer-bottom-bar">
+          <div>&copy; 2026 Wild Sage Journey. Guided by Beth Eberle. All Rights Reserved.</div>
+          <div>Strictly Editorial &bull; Patient Luxury &bull; Wild Sage Journey</div>
+        </div>
+
+      </div>
+    </footer>
+  </main>
+
+  <!-- =============================================================
+       BOOKING MODAL DIALOG
+       ============================================================= -->
+  <div class="modal-overlay" id="booking-modal" role="dialog" aria-modal="true" aria-labelledby="modal-heading">
+    <div class="modal-card">
+      <button class="modal-close-btn" onclick="closeBookingModal()" aria-label="Close dialog">&times; CLOSE</button>
+      
+      <span class="kicker kicker-ochre">Discovery Session</span>
+      <h3 id="modal-heading" class="serif-display" style="font-size: 2.2rem; margin: 0.6rem 0 1.2rem; line-height: 1.2;">
+        Begin Your <span class="gold-italic">Return</span>
+      </h3>
+      <div class="rule-gold"></div>
+      <p style="font-size: 0.98rem; color: rgba(34,32,28,0.85); margin-bottom: 2rem; line-height: 1.6;">
+        A complimentary 30-minute private consultation with Beth Eberle to explore where you are, what has dimmed your spark, and whether the 12-Week Immersion is the aligned next chapter for you.
+      </p>
+
+      <form id="discovery-form" onsubmit="handleFormSubmit(event)">
+        <div class="form-group">
+          <label class="form-label" for="client-name">Your Full Name</label>
+          <input type="text" id="client-name" class="form-input" placeholder="e.g. Eleanor Vance" required />
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="client-email">Email Address</label>
+          <input type="email" id="client-email" class="form-input" placeholder="e.g. eleanor@example.com" required />
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="client-transition">What transition or season are you currently navigating?</label>
+          <textarea id="client-transition" class="form-textarea" rows="3" placeholder="Share a few words about what brings you here..." required></textarea>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="client-timeframe">Preferred Time for Call</label>
+          <select id="client-timeframe" class="form-input">
+            <option value="morning">Morning (9am - 12pm MT)</option>
+            <option value="afternoon">Afternoon (1pm - 4pm MT)</option>
+            <option value="flexible">Flexible / First Available</option>
+          </select>
+        </div>
+
+        <button type="submit" class="btn-gold-primary" style="width: 100%; justify-content: center; margin-top: 1rem;">
+          Request Your Discovery Session &rarr;
+        </button>
+      </form>
+
+      <div id="form-success-msg" style="display: none; margin-top: 1.5rem; padding: 1.25rem; background: var(--color-acacia); color: var(--color-bone);">
+        <h4 class="serif-display" style="font-size: 1.3rem; margin-bottom: 0.4rem;">Thank You, Warmly.</h4>
+        <p style="font-size: 0.95rem; line-height: 1.5;">Your note has been received with care. Beth will personally respond within 24–48 hours with booking times.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- =============================================================
+       INTERACTIVITY LOGIC
+       ============================================================= -->
+  <script>
+    // Header scroll background effect
+    const header = document.getElementById('main-nav-header');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 80) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+
+    // Mobile nav toggle
+    function toggleMobileNav() {
+      const menu = document.getElementById('nav-links-menu');
+      menu.classList.toggle('mobile-open');
+    }
+
+    // Modal controls
+    function openBookingModal() {
+      const modal = document.getElementById('booking-modal');
+      modal.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeBookingModal() {
+      const modal = document.getElementById('booking-modal');
+      modal.classList.remove('active');
+      document.body.style.overflow = 'auto';
+    }
+
+    // Close modal on click outside
+    document.getElementById('booking-modal').addEventListener('click', (e) => {
+      if (e.target.id === 'booking-modal') {
+        closeBookingModal();
+      }
+    });
+
+    // Handle form submit
+    function handleFormSubmit(e) {
+      e.preventDefault();
+      document.getElementById('discovery-form').style.display = 'none';
+      document.getElementById('form-success-msg').style.display = 'block';
+    }
+  </script>
+</body>
+</html>
